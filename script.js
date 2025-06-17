@@ -15,4 +15,16 @@ document.getElementById(
   "p2"
 ).textContent = `${fruit.name} is a very popular in BD and they can be found in ${fruit.origin}`;
 
-document.writeln(`Random Method Generates Random Decimal Number in Between (excluding) 0 and 1 = ${Math.random()}`)
+document.writeln(
+  `Random Method Generates Random Decimal Number in Between (excluding) 0 and 1 = ${Math.random()}`
+);
+
+
+
+function sumOfArguments(){
+  sum = 0;
+  for (let i= 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
